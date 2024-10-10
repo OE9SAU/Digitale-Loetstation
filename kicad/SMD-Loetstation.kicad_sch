@@ -4720,10 +4720,10 @@
 		)
 		(uuid "ffe35a68-9fae-4da6-bbb3-c05ec294622a")
 	)
-	(text_box "Pin-Belegung:    Pin  Port   Nr.	    Type    Verbinden mit\n                     1                  Vcc     +5V\n                     2   PB0    10      DIN10   STANDBY\n                     5   PB1    8               PIEZO\n                    13   PA0    0       DIN0    ROTARY_A\n                    12   PA1    1       DIN1    ROTARY_B\n                    11   PA2    2       DIN2    ROTARY_PUSH\n                    10   PA3    A3      ADC3    TEMP_SENSOR\n                     7   PA6    4       SDA     I2C/SDA\n                     8   PA5    5       OC1B    HEAT\n                     9   PA4    6       SCL     I2C/SCL\n                    14                  GND     Ground"
+	(text_box "Pin Port  Nr.     Type    Verbinden mit\n1                 Vcc     +5V\n2   PB0    10    DIN10   STANDBY\n5   PB1    8              PIEZO\n13  PA0    0     DIN0    ROTARY_A\n12  PA1    1     DIN1    ROTARY_B\n11  PA2    2     DIN2    ROTARY_PUSH\n10  PA3    A3    ADC3    TEMP_SENSOR\n7   PA6    4     SDA     I2C/SDA\n8   PA5    5     OC1B    HEAT\n9   PA4    6     SCL     I2C/SCL\n14                GND     Ground"
 		(exclude_from_sim no)
 		(at 305.435 10.16 0)
-		(size 176.53 60.325)
+		(size 104.775 60.325)
 		(stroke
 			(width 0)
 			(type default)

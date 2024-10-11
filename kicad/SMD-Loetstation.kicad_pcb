@@ -10572,7 +10572,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text_box "SMD-Loetstation\n© DC3MKB/OE1CGS\nPCB by OE9SAU 10/2024"
+	(gr_text_box "Digitale Loetstation\n© DC3MKB/OE1CGS\nPCB by OE9SAU 10/2024"
 		(start 130.8735 105.918)
 		(end 148.7805 110.617)
 		(layer "F.SilkS")

@@ -479,7 +479,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "K:/Eigene Dateien/HAM/DIY/Lötstation/OE1CGS_OE9SAU/SMD-Loetstation/kicad/gerber",
+      "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "SMD-Loetstation.dsn",
       "step": "",

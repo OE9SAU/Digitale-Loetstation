@@ -1182,6 +1182,121 @@
 				)
 			)
 		)
+		(symbol "Connector:TestPoint_Probe"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 1.651 5.842 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Probe"
+				(at 1.651 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point (alternative probe-style design)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_Probe_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0.762) (xy 0 0) (xy 0.762 1.27) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.397 0.635) (xy 0.635 1.397) (xy 2.413 3.175) (xy 3.175 2.413) (xy 1.397 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TestPoint_Probe_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_02x02_Top_Bottom"
 			(pin_names
 				(offset 1.016) hide)
@@ -2587,7 +2702,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:LM78M05_TO252"
+		(symbol "Regulator_Linear:LM317L_SO8"
 			(pin_names
 				(offset 0.254)
 			)
@@ -2602,7 +2717,7 @@
 					)
 				)
 			)
-			(property "Value" "LM78M05_TO252"
+			(property "Value" "LM317L_SO8"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -2611,8 +2726,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-				(at 0 5.715 0)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2621,8 +2736,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MC78M00-D.PDF"
-				(at 0 -1.27 0)
+			(property "Datasheet" "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2630,7 +2745,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-252 (D-PAK)"
+			(property "Description" "100mA 35V Adjustable Linear Regulator, SO-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2639,7 +2754,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 500mA Positive"
+			(property "ki_keywords" "Adjustable Voltage Regulator 100mA Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2648,7 +2763,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?252*"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2657,7 +2772,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM78M05_TO252_0_1"
+			(symbol "LM317L_SO8_0_1"
 				(rectangle
 					(start -5.08 1.905)
 					(end 5.08 -5.08)
@@ -2670,7 +2785,7 @@
 					)
 				)
 			)
-			(symbol "LM78M05_TO252_1_1"
+			(symbol "LM317L_SO8_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -2689,10 +2804,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "GND"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2707,10 +2822,239 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54) hide
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "ADJ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 -2.54 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54) hide
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54) hide
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -2.54 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Regulator_Linear:MCP1703Ax-120xxTT"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MCP1703Ax-120xxTT"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low Quiescent Current LDO Regulator, 1.2V, 250mA, Vin<=16V, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "REGULATOR LDO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP1703Ax-120xxTT_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MCP1703Ax-120xxTT_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_out line
 					(at 7.62 0 180)
 					(length 2.54)
 					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3805,6 +4149,12 @@
 		(uuid "474379dd-ed5e-402d-9055-d07772b57f19")
 	)
 	(junction
+		(at 74.93 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e0e0f4c-4de1-42ac-a8a5-d6b3a8f1e78b")
+	)
+	(junction
 		(at 238.76 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3841,6 +4191,12 @@
 		(uuid "7441a665-fc9c-4dd0-a07b-de5b921c36ca")
 	)
 	(junction
+		(at 34.29 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d8d7f36-0246-4958-966e-908ba29d75e3")
+	)
+	(junction
 		(at 254 156.845)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3865,6 +4221,12 @@
 		(uuid "9015dee3-356b-4f8f-93a8-b358e842765a")
 	)
 	(junction
+		(at 53.34 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5c015ff-bcf2-4b00-a2bb-4e5205db10a8")
+	)
+	(junction
 		(at 212.09 69.215)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3883,6 +4245,12 @@
 		(uuid "a9598118-5f1f-4243-a2dd-ddea954a6d8a")
 	)
 	(junction
+		(at 43.18 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac9ac6b4-e45b-4a9f-be2b-235c2c2b8ac6")
+	)
+	(junction
 		(at 48.26 67.945)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3899,6 +4267,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc0f7c1e-c0ed-4547-868b-50e26bb5ce8b")
+	)
+	(junction
+		(at 64.77 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "becafcf9-99b1-45fd-a033-924ddbe9f07e")
 	)
 	(junction
 		(at 102.235 85.09)
@@ -3949,6 +4323,12 @@
 		(uuid "e32e3423-62f4-4ef0-a2e8-e1deb439fc35")
 	)
 	(junction
+		(at 64.77 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9618a36-f379-4ebf-99a7-17f65ed244a7")
+	)
+	(junction
 		(at 218.44 64.135)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3969,6 +4349,16 @@
 			(type default)
 		)
 		(uuid "002b48d7-7b9e-42ea-9e1b-d610a653bcb4")
+	)
+	(wire
+		(pts
+			(xy 43.18 158.75) (xy 45.72 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "007e15b4-4651-44f7-9f11-396e166ca1a1")
 	)
 	(wire
 		(pts
@@ -4039,6 +4429,16 @@
 			(type default)
 		)
 		(uuid "04ed3c19-64a2-42c3-a122-b431d878873f")
+	)
+	(wire
+		(pts
+			(xy 53.34 185.42) (xy 53.34 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05111c77-9b28-49e1-8514-c769a12c4e7e")
 	)
 	(wire
 		(pts
@@ -4189,6 +4589,16 @@
 			(type default)
 		)
 		(uuid "16627de2-2535-40b6-89e8-c55e165abf75")
+	)
+	(wire
+		(pts
+			(xy 246.38 113.03) (xy 246.38 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17bb89c4-fb79-4616-b3d2-64fd24c43899")
 	)
 	(wire
 		(pts
@@ -4432,6 +4842,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 158.75) (xy 43.18 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b216064-1f9a-4868-8ddd-e16e698e07fb")
+	)
+	(wire
+		(pts
 			(xy 196.85 135.89) (xy 196.85 138.43)
 		)
 		(stroke
@@ -4439,6 +4859,16 @@
 			(type default)
 		)
 		(uuid "3c4b4a28-16e8-4830-910a-7b95db7930d3")
+	)
+	(wire
+		(pts
+			(xy 43.18 175.26) (xy 34.29 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dfb865a-7618-42bb-88b4-d0de8494dbf4")
 	)
 	(wire
 		(pts
@@ -4562,6 +4992,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 158.75) (xy 74.93 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e6210d1-6873-4c8a-a53f-5d863c9a73cb")
+	)
+	(wire
+		(pts
 			(xy 80.01 149.86) (xy 80.01 142.875)
 		)
 		(stroke
@@ -4589,6 +5029,16 @@
 			(type default)
 		)
 		(uuid "4f61fc06-bc67-4543-990f-d169345cd5cd")
+	)
+	(wire
+		(pts
+			(xy 64.77 158.75) (xy 74.93 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "517fac44-fa5e-4273-97c2-63d5c484d900")
 	)
 	(wire
 		(pts
@@ -4639,6 +5089,26 @@
 			(type default)
 		)
 		(uuid "5c489588-980b-4025-87fb-e460ce196016")
+	)
+	(wire
+		(pts
+			(xy 92.71 173.99) (xy 92.71 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ccfe454-783f-47a4-ad08-c3e9b0d722a4")
+	)
+	(wire
+		(pts
+			(xy 74.93 172.72) (xy 74.93 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d2e50cf-962e-4337-8dde-2efbf2e6038e")
 	)
 	(wire
 		(pts
@@ -4712,6 +5182,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 166.37) (xy 34.29 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "644c6565-8d1d-4119-8b3a-3de5cfcab4b1")
+	)
+	(wire
+		(pts
 			(xy 233.68 64.135) (xy 248.285 64.135)
 		)
 		(stroke
@@ -4769,6 +5249,16 @@
 			(type default)
 		)
 		(uuid "693dc2bc-8dcf-40a6-a258-d80d01ef54dd")
+	)
+	(wire
+		(pts
+			(xy 34.29 175.26) (xy 34.29 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bc30a12-8d40-4181-adee-ce2ff9e152f6")
 	)
 	(wire
 		(pts
@@ -4832,6 +5322,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 175.26) (xy 64.77 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77d464a0-8630-463a-85db-cecfb2c6beb8")
+	)
+	(wire
+		(pts
 			(xy 144.78 65.405) (xy 156.21 65.405)
 		)
 		(stroke
@@ -4882,6 +5382,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 175.26) (xy 53.34 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c508ef7-b8d1-4059-bc50-a84fc9d6e48e")
+	)
+	(wire
+		(pts
 			(xy 171.45 98.425) (xy 171.45 116.84)
 		)
 		(stroke
@@ -4909,6 +5419,16 @@
 			(type default)
 		)
 		(uuid "82411a4d-de8d-4bd1-83b4-dee55a854abb")
+	)
+	(wire
+		(pts
+			(xy 53.34 166.37) (xy 53.34 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82f3b48d-b9aa-480b-a797-39749b0341ef")
 	)
 	(wire
 		(pts
@@ -5132,6 +5652,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 158.75) (xy 86.36 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2f84315-ddfa-4342-9755-5b461ffa2f99")
+	)
+	(wire
+		(pts
 			(xy 154.94 62.865) (xy 154.94 48.26)
 		)
 		(stroke
@@ -5332,6 +5862,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 158.75) (xy 43.18 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfaf1f41-61b5-4bda-ba9b-8231ef84c891")
+	)
+	(wire
+		(pts
 			(xy 147.32 109.22) (xy 147.32 120.65)
 		)
 		(stroke
@@ -5372,6 +5912,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 173.99) (xy 90.17 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca756b64-fa36-44a9-ac9f-60751ef1756b")
+	)
+	(wire
+		(pts
 			(xy 80.01 78.74) (xy 80.01 90.805)
 		)
 		(stroke
@@ -5402,6 +5952,26 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 172.72) (xy 43.18 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc9913b-faf1-48c6-a812-0d81369c296d")
+	)
+	(wire
+		(pts
+			(xy 64.77 158.75) (xy 64.77 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d026e1c2-159f-484f-823a-6d6a71e9a399")
+	)
+	(wire
+		(pts
 			(xy 60.325 65.405) (xy 69.215 65.405)
 		)
 		(stroke
@@ -5409,6 +5979,26 @@
 			(type default)
 		)
 		(uuid "d08e8874-d6c8-4e4f-80d8-44b83388fee9")
+	)
+	(wire
+		(pts
+			(xy 60.96 158.75) (xy 64.77 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0bc13e2-cc6d-4c28-bac1-c6f2ed2b5e67")
+	)
+	(wire
+		(pts
+			(xy 24.13 158.75) (xy 26.67 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3014611-ce87-486d-9042-48e5b05fe42a")
 	)
 	(wire
 		(pts
@@ -5429,6 +6019,16 @@
 			(type default)
 		)
 		(uuid "d906606b-a09a-4176-a432-32585e6d921d")
+	)
+	(wire
+		(pts
+			(xy 64.77 172.72) (xy 64.77 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db857ecc-9cdb-4652-98d1-f37a1e8161ff")
 	)
 	(wire
 		(pts
@@ -5602,6 +6202,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 158.75) (xy 86.36 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4801630-f81b-437d-ad0f-98ea194ff950")
+	)
+	(wire
+		(pts
 			(xy 215.9 59.055) (xy 248.285 59.055)
 		)
 		(stroke
@@ -5659,6 +6269,16 @@
 			(type default)
 		)
 		(uuid "fc0c5e3a-0b53-4615-85de-8f5cbc16e398")
+	)
+	(wire
+		(pts
+			(xy 53.34 175.26) (xy 64.77 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdf09fd3-47c3-4592-b59b-7888f5803fa0")
 	)
 	(wire
 		(pts
@@ -6002,6 +6622,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:LM317L_SO8")
+		(at 53.34 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c0c92b7-e25a-4a4d-8c02-ad37737fb02f")
+		(property "Reference" "U5"
+			(at 53.34 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM317L_SO8"
+			(at 53.34 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 53.34 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf"
+			(at 53.34 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mA 35V Adjustable Linear Regulator, SO-8"
+			(at 53.34 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e15af00b-ffb8-4647-9f1f-73764c9ab438")
+		)
+		(pin "2"
+			(uuid "51741619-f528-4670-91cd-836ff8fa0303")
+		)
+		(pin "3"
+			(uuid "9a2bcef0-847d-48b4-9592-b587ef0b2fc9")
+		)
+		(pin "7"
+			(uuid "5700099b-57e3-4be3-abfd-62a838df12d5")
+		)
+		(pin "1"
+			(uuid "98db79dd-418b-46c6-b469-d69ca96e07b6")
+		)
+		(pin "5"
+			(uuid "d0e4eab7-29da-4e87-b696-4e1fc7fb404a")
+		)
+		(pin "4"
+			(uuid "73bf9180-05c8-4e79-aea3-eb7d46d9e901")
+		)
+		(pin "6"
+			(uuid "57c5dbd0-90f2-4782-8063-9d8101fe1e02")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 254 154.305 0)
 		(unit 1)
@@ -6295,7 +7002,7 @@
 		(fields_autoplaced yes)
 		(uuid "221262bb-6fe9-45ca-a78e-d39409749bf9")
 		(property "Reference" "C7"
-			(at 74.295 36.8299 0)
+			(at 74.93 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6303,8 +7010,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 74.295 39.3699 0)
+		(property "Value" "1uF"
+			(at 74.93 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6839,6 +7546,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 246.38 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a9e06d7-ea2e-4b15-bffa-794aa920ee07")
+		(property "Reference" "#PWR025"
+			(at 246.38 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 246.38 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "906a2e7f-58fd-4e20-8997-dfd98452e6f6")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 212.09 73.66 0)
 		(mirror x)
@@ -6903,6 +7676,73 @@
 			(project "SMD-Loetstation"
 				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 246.38 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a5e0234-5007-4768-b9a4-621ce3d02d66")
+		(property "Reference" "GND1"
+			(at 250.19 110.1724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 112.7124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+			(at 251.46 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 246.38 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01cd407f-94f0-4fa5-b67f-1261a217308d")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "GND1")
 					(unit 1)
 				)
 			)
@@ -7043,6 +7883,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:LM317L_SO8")
+		(at 34.29 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f09346c-4d19-4bf5-abdf-ea83b6f86aa9")
+		(property "Reference" "U4"
+			(at 34.29 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM317L_SO8"
+			(at 34.29 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 34.29 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf"
+			(at 34.29 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mA 35V Adjustable Linear Regulator, SO-8"
+			(at 34.29 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "3db41337-ac67-46d4-a2a2-bdb03bd47808")
+		)
+		(pin "2"
+			(uuid "5def124b-9e1b-4b93-8f66-abd82fdbb3ac")
+		)
+		(pin "3"
+			(uuid "c0c32e63-009d-4ccf-8042-84f09f791130")
+		)
+		(pin "7"
+			(uuid "0089dae9-4aa2-4e1c-b156-2ce68c4989d9")
+		)
+		(pin "1"
+			(uuid "21a98721-0754-405b-b833-6302a91eb90c")
+		)
+		(pin "5"
+			(uuid "fd77ba5f-abe2-43d7-8615-140012a05e68")
+		)
+		(pin "4"
+			(uuid "2d4cf7a6-921b-4e71-b1c8-d7bf59c6cc0f")
+		)
+		(pin "6"
+			(uuid "56ac749d-f2a5-44ff-95cc-fa065cbf4f80")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 223.52 156.845 270)
 		(unit 1)
@@ -7110,6 +8037,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 24.13 158.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5afe2ecd-067b-4caf-8e40-6df4c2459ee4")
+		(property "Reference" "#PWR031"
+			(at 27.94 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 20.32 158.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 24.13 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed1c55ba-86e9-49b3-aa34-acffee11ed49")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 47.625 38.1 0)
 		(unit 1)
@@ -7120,7 +8114,7 @@
 		(fields_autoplaced yes)
 		(uuid "639b5ce8-1612-43cc-b606-7d212ae0b0d9")
 		(property "Reference" "C6"
-			(at 51.435 36.8299 0)
+			(at 50.8 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7128,8 +8122,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330nF"
-			(at 51.435 39.3699 0)
+		(property "Value" "1uF"
+			(at 50.8 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7244,78 +8238,6 @@
 			(project "SMD-Loetstation"
 				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM78M05_TO252")
-		(at 59.69 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64e16309-6b4e-4dd3-af67-51936f246501")
-		(property "Reference" "U1"
-			(at 59.69 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM78M05_TO252"
-			(at 59.69 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 59.69 23.495 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MC78M00-D.PDF"
-			(at 59.69 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-252 (D-PAK)"
-			(at 59.69 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0508a21b-b585-489e-ba41-399eabcfd549")
-		)
-		(pin "3"
-			(uuid "40438475-c0db-42da-aaae-a27f2841191e")
-		)
-		(pin "2"
-			(uuid "9206791e-9956-4ca9-92b8-0fd1bebceb06")
-		)
-		(instances
-			(project "SMD-Loetstation"
-				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -8529,6 +9451,143 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 92.71 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6cb4474-4e0b-4d45-827f-fcffa1417418")
+		(property "Reference" "#PWR032"
+			(at 92.71 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 194.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6a98718-be76-4602-9b1a-832f056422e8")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:MCP1703Ax-120xxTT")
+		(at 59.69 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a96b9250-1159-4484-bc56-04bdf2f2658d")
+		(property "Reference" "U6"
+			(at 59.69 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1703Ax-120xxTT"
+			(at 59.69 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 59.69 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
+			(at 59.69 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Quiescent Current LDO Regulator, 1.2V, 250mA, Vin<=16V, SOT-23"
+			(at 59.69 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "0fc6237e-bcb7-49f2-8cb1-11ec8c165de7")
+		)
+		(pin "1"
+			(uuid "2fe7a4b9-f954-460f-aca0-025d8b4f99e4")
+		)
+		(pin "2"
+			(uuid "b02da7b8-3d6f-4fa7-9745-d10d75ef5985")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 100.965 117.475 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8736,6 +9795,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 43.18 168.91 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9110877-35b4-415d-a72c-b9a2305dae7b")
+		(property "Reference" "R15"
+			(at 40.64 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "12"
+			(at 40.64 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 41.402 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 43.18 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2c7f6370-699b-4399-a1c9-f10d34d69b1e")
+		)
+		(pin "1"
+			(uuid "ff8a42d9-e731-4ee1-bd57-067c24e9f5ff")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 74.295 29.21 270)
 		(unit 1)
@@ -8894,6 +10023,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 92.71 168.91 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1dfd22b-7ca8-442c-9128-9c6d8cb41c08")
+		(property "Reference" "J10"
+			(at 93.98 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5V/100mA"
+			(at 91.44 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 92.71 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 92.71 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "554dac4d-783b-446e-98ef-d09de79b352c")
+		)
+		(pin "2"
+			(uuid "1d5ce8ab-432b-49b0-854c-44c974b8964b")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 53.34 181.61 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5cdf120-1e6a-4e90-9fdb-5a550e169547")
+		(property "Reference" "R17"
+			(at 50.8 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "750"
+			(at 50.8 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 51.562 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 53.34 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d214e2dd-259c-470d-b052-37386343cff2")
+		)
+		(pin "1"
+			(uuid "573e1b95-83f3-473a-8069-b64625995d92")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 69.215 73.025 180)
 		(unit 1)
@@ -8958,6 +10224,72 @@
 			(project "SMD-Loetstation"
 				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c81ebe39-27b8-415a-a2b8-a943b38f473f")
+		(property "Reference" "#PWR026"
+			(at 34.29 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f825bf91-f9d3-488b-ba71-9159f39706fb")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -10331,6 +11663,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 53.34 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4697cbf-00b2-430e-a87e-1a383d07e106")
+		(property "Reference" "#PWR030"
+			(at 53.34 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63085ebd-720c-47d9-9d55-10f30a196326")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 196.85 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10532,6 +11930,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 64.77 168.91 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc603d5d-0a9a-4d93-b355-1fac7d45a8c2")
+		(property "Reference" "R16"
+			(at 62.23 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "240"
+			(at 62.23 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 62.992 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 64.77 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0fb0c7f7-8273-459a-9bfb-3da6dc34bb6c")
+		)
+		(pin "1"
+			(uuid "005a522f-bda5-4c2a-895a-0de9a8a79dbd")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 137.16 125.73 0)
 		(unit 1)
@@ -10593,6 +12061,76 @@
 			(project "SMD-Loetstation"
 				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 74.93 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd5a7b9d-033b-4370-b72c-c7b943a0efa2")
+		(property "Reference" "C8"
+			(at 78.74 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 78.74 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 75.8952 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 74.93 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06f6ed25-6735-4e7c-ab19-4f68a99a4632")
+		)
+		(pin "2"
+			(uuid "d5a4d65a-f6af-4e55-8675-a6dc4aae242c")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "C8")
 					(unit 1)
 				)
 			)

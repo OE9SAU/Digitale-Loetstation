@@ -4143,16 +4143,16 @@
 		(uuid "43430b5c-d8ef-4bc2-b4fd-68574316dc6c")
 	)
 	(junction
+		(at 69.85 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4708e693-25f3-434a-8348-d82e49fb2d32")
+	)
+	(junction
 		(at 171.45 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "474379dd-ed5e-402d-9055-d07772b57f19")
-	)
-	(junction
-		(at 74.93 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e0e0f4c-4de1-42ac-a8a5-d6b3a8f1e78b")
 	)
 	(junction
 		(at 238.76 38.1)
@@ -4327,6 +4327,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9618a36-f379-4ebf-99a7-17f65ed244a7")
+	)
+	(junction
+		(at 78.74 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea34e27c-cab5-4c3b-97dd-6b609131176b")
 	)
 	(junction
 		(at 218.44 64.135)
@@ -4742,6 +4748,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 158.75) (xy 78.74 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd542d8-5276-4215-bf17-af9e57fc4aca")
+	)
+	(wire
+		(pts
 			(xy 80.01 127) (xy 80.01 132.715)
 		)
 		(stroke
@@ -4992,7 +5008,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 158.75) (xy 74.93 165.1)
+			(xy 69.85 158.75) (xy 69.85 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5032,7 +5048,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 158.75) (xy 74.93 158.75)
+			(xy 64.77 158.75) (xy 69.85 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5092,7 +5108,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 173.99) (xy 92.71 190.5)
+			(xy 92.71 173.99) (xy 92.71 187.96)
 		)
 		(stroke
 			(width 0)
@@ -5102,7 +5118,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 172.72) (xy 74.93 175.26)
+			(xy 69.85 172.72) (xy 69.85 175.26)
 		)
 		(stroke
 			(width 0)
@@ -5322,7 +5338,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 175.26) (xy 64.77 175.26)
+			(xy 69.85 175.26) (xy 64.77 175.26)
 		)
 		(stroke
 			(width 0)
@@ -5439,6 +5455,16 @@
 			(type default)
 		)
 		(uuid "83167020-6179-456d-b942-2857e07e0835")
+	)
+	(wire
+		(pts
+			(xy 78.74 158.75) (xy 86.36 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86bc98b9-003d-482c-8b8b-1377d782495c")
 	)
 	(wire
 		(pts
@@ -6192,6 +6218,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 158.75) (xy 78.74 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f132e4cc-101a-4599-b183-139fd396f6b6")
+	)
+	(wire
+		(pts
 			(xy 91.44 53.34) (xy 91.44 50.8)
 		)
 		(stroke
@@ -6199,16 +6235,6 @@
 			(type default)
 		)
 		(uuid "f2276051-198e-44b1-8dd4-08d37fa20d3c")
-	)
-	(wire
-		(pts
-			(xy 74.93 158.75) (xy 86.36 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4801630-f81b-437d-ad0f-98ea194ff950")
 	)
 	(wire
 		(pts
@@ -6269,6 +6295,16 @@
 			(type default)
 		)
 		(uuid "fc0c5e3a-0b53-4615-85de-8f5cbc16e398")
+	)
+	(wire
+		(pts
+			(xy 78.74 185.42) (xy 78.74 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc184d09-9d1b-474f-936a-d9b6dd27b8c8")
 	)
 	(wire
 		(pts
@@ -7682,6 +7718,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 78.74 173.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46fa3eaa-6cae-4359-907b-45d8daa7d146")
+		(property "Reference" "R20"
+			(at 80.645 172.847 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 80.645 175.133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 80.518 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "135a811f-6fcf-4fe2-94b2-b947ee2a3041")
+		)
+		(pin "2"
+			(uuid "f33e4392-6491-46d0-bd63-91b01b6b1bb7")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint_Probe")
 		(at 246.38 113.03 0)
 		(unit 1)
@@ -8031,6 +8136,76 @@
 			(project "SMD-Loetstation"
 				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 78.74 181.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56517a48-52d4-4981-91d3-27699ab303a4")
+		(property "Reference" "D2"
+			(at 82.55 181.9274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 82.55 184.4674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 78.74 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 78.74 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "175c1f53-65b6-4bc3-abe5-4c719fc04cc5")
+		)
+		(pin "1"
+			(uuid "1969156d-6f64-4330-aba1-27ecffa9d2f9")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -9451,7 +9626,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 190.5 0)
+		(at 92.71 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9460,7 +9635,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6cb4474-4e0b-4d45-827f-fcffa1417418")
 		(property "Reference" "#PWR032"
-			(at 92.71 196.85 0)
+			(at 92.71 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9469,7 +9644,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 194.945 0)
+			(at 92.71 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9477,7 +9652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 190.5 0)
+			(at 92.71 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9486,7 +9661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 190.5 0)
+			(at 92.71 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9495,7 +9670,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 190.5 0)
+			(at 92.71 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9813,7 +9988,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "12"
+		(property "Value" "27"
 			(at 40.64 170.1799 0)
 			(effects
 				(font
@@ -10039,7 +10214,7 @@
 				)
 			)
 		)
-		(property "Value" "5V/100mA"
+		(property "Value" "5V/50mA"
 			(at 91.44 165.1 0)
 			(effects
 				(font
@@ -11592,6 +11767,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 78.74 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e89fa0b8-c795-4e16-b99f-d022e7da052f")
+		(property "Reference" "#PWR033"
+			(at 78.74 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "baf8a796-37b3-4ea3-b889-05095cc06455")
+		)
+		(instances
+			(project "SMD-Loetstation"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 91.44 57.15 180)
 		(unit 1)
@@ -12068,7 +12309,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 74.93 168.91 0)
+		(at 69.85 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12077,7 +12318,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd5a7b9d-033b-4370-b72c-c7b943a0efa2")
 		(property "Reference" "C8"
-			(at 78.74 167.6399 0)
+			(at 73.66 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12086,7 +12327,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 78.74 170.1799 0)
+			(at 73.66 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12095,7 +12336,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 75.8952 172.72 0)
+			(at 70.8152 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12104,7 +12345,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 168.91 0)
+			(at 69.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12113,7 +12354,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 168.91 0)
+			(at 69.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)

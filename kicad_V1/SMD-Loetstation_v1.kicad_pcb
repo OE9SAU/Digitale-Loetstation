@@ -13888,7 +13888,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "9b726511-45ff-4a09-a342-1f06cae7d91a")
 		)
-		(model "C:/Users/Sauti/OneDrive/Dokumente/KiCad/8.0/3dmodels/Same_Sky_CPT-9019S-SMT-TR.step"
+		(model "K:/Eigene Dateien/HAM/DIY/Lötstation/OE1CGS_OE9SAU/Same_Sky_CPT-9019S-SMT-TR/Same_Sky_CPT-9019S-SMT-TR.step"
 			(offset
 				(xyz 4.5 -4.5 0)
 			)

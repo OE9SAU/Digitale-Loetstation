@@ -5,8 +5,8 @@ and DC3MKB [http://www.martin-kumm.de/wiki/doku.php?id=05Misc:SMD_Solderstation]
 Soldering Unit for Weller RT solder tips, inkluding a small 5V/50mA powersupply for the first power on trials.
 Fork and PCB Design by OE9SAU
 
-![SMD-Loetstation](Complete.png)
-![SMD-Loetstation](Loetstation.jpg)
-![SMD-Loetstation](Loetstation_ohne_alles.jpg)
-![SMD-Loetstation](Loetstation_Rueckseite.jpg)
+![SMD-Loetstation](pics/Complete.png)
+![SMD-Loetstation](pics/Loetstation.jpg)
+![SMD-Loetstation](pics/Loetstation_ohne_alles.jpg)
+![SMD-Loetstation](pics/Loetstation_Rueckseite.jpg)
 

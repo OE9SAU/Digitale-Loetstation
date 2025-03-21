@@ -1,0 +1,59 @@
+void setup(){
+  TCCR1A = 0b00100011;  // 10-bit PWM => 1023 als Maximalwert, toggle OC1B
+  TCCR1B = 0b00000001;  // Timer 1 ein, kein Prescaler => 1 MHz -> 496 Hz
+  OCR1B  = 0;           // Heizung aus (= Duty Cycle 0%)
+}
+
+void loop() {
+  pwmRampe();
+}
+
+void pwmRampe() {
+  const int pwmMin = 0;
+  const int pwmMax = 1023;
+  const int rampTime = 20000; // 20 Sekunden für eine komplette Rampenfahrt (hoch + runter)
+  const int stepDelay = rampTime / (2 * pwmMax); // Berechnung der Verzögerung pro Schritt
+
+  // Hochfahren der PWM
+  for (int i = pwmMin; i <= pwmMax; i++) {
+    OCR1B = i;
+    delay(stepDelay);
+  }
+
+  // Runterfahren der PWM
+  for (int i = pwmMax; i >= pwmMin; i--) {
+    OCR1B = i;
+    delay(stepDelay);
+  }
+}
+
+void reglerTemperatur(){
+  if(millis() < lzp_regler + REGELZEIT){return;} 
+
+  a_tist = abfrageTemperatur();  
+
+  if(standby){                                         
+    pwm = P_KOEFF_P * (tstby - a_tist);
+  } else {            
+    pwm = P_KOEFF_PID * (a_tsoll - a_tist) + I_KOEFF_PID * pwm;
+    pwm = pwm - D_KOEFF_PID * (a_tist - lr_tist);
+  }
+
+  pwm = int(min(max(pwm,0),1023));  
+  OCR1B  = pwm; // Setzt die Heizleistung (Wert/1023)
+  lr_tist = a_tist; 
+  lzp_regler = millis(); 
+}
+
+int abfrageTemperatur(){
+  OCR1B  = 0;  // Heizung aus, um korrekte ADC-Werte zu erhalten
+  delay(WARTEZEIT);
+  int tempval = analogRead(PIN_TEMP);  
+
+  if(tempval > 1000 || (millis() > 4000 && tempval == 0)){
+    notAus();
+  }
+
+  OCR1B  = pwm;  // Heizung wieder einschalten
+  return A_ADC*tempval*tempval + B_ADC*tempval + C_ADC + 0.5;
+}

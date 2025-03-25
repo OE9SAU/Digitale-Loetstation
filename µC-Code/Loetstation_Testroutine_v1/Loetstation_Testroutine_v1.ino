@@ -1,6 +1,10 @@
-//Testroutine für Lötkolben Projekt
-//zum Überprüfen der externen Verdrahtung und PCB Bestückung
-//v4_OE9SAU_CHATGPT
+// Testroutine für Lötkolben Projekt
+// zum Überprüfen der externen Verdrahtung und PCB Bestückung
+// v1_OE9SAU_CHATGPT
+
+// Testroutine für Lötkolben Projekt
+// zum Überprüfen der externen Verdrahtung und PCB Bestückung
+// v5_OE9SAU_CHATGPT
 
 #include <TinyWireM.h>
 #include <LiquidCrystal_I2C.h>
@@ -11,7 +15,7 @@ LiquidCrystal_I2C lcd(LCDI2CADR, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);
 #define PIN_ROT_A    0
 #define PIN_ROT_B    1
 #define PIN_ROT_PUSH 2
-#define PIN_HEAT     5
+#define PIN_HEAT     5  // Pin für HEAT (PWM)
 #define PIN_TEMP     A3
 #define PIN_STBY     10
 #define PIN_PIEZO    9
@@ -25,16 +29,20 @@ void setup() {
   lcd.begin(16, 2);
   lcd.setBacklight(true);
   lcd.setCursor(0, 0);
-  lcd.print("HW TEST v3");
+  lcd.print("HW TEST v1");
 
   pinMode(PIN_ROT_A, INPUT_PULLUP);
   pinMode(PIN_ROT_B, INPUT_PULLUP);
   pinMode(PIN_ROT_PUSH, INPUT_PULLUP);
   pinMode(PIN_STBY, INPUT_PULLUP);
-  pinMode(PIN_HEAT, OUTPUT);
-  digitalWrite(PIN_HEAT, LOW);
+  pinMode(PIN_HEAT, OUTPUT);  // Pin HEAT als Ausgang setzen
   pinMode(PIN_PIEZO, OUTPUT);
   pinMode(PIN_LED, OUTPUT);
+
+  TCCR1A = 0b00100011;                                // 10-bit PWM => 1023 als Maximalwert (=100% Heizung), toggle OC1B
+  TCCR1B = 0b00000001;                                // Timer 1 ein, kein Prescaler => 1 MHz -> 496 Hz
+  OCR1B  = 0;                                         // Heizung aus (= Duty Cycle 0%)
+
   delay(2000);
   lcd.clear();
 }
@@ -53,26 +61,23 @@ void loop() {
 
   // HEAT-Test mit analoger Spannungsausgabe
   lcd.clear();
-  lcd.setCursor(0, 0);
   lcd.print("HEAT Test");
-  for (int i = 0; i < 5; i++) {
-    lcd.setCursor(5 + i, 0);
-    lcd.print(".");
-    delay(600);
-  }
 
-  // 2V für 2 Sekunden
-  analogWrite(PIN_HEAT, 102);  // PWM-Wert für 2V
-  delay(2000);  // 2 Sekunden warten
+  OCR1B = 100;  
+  lcd.print(".");  // Erster Punkt direkt hinter "HEAT Test"
+  delay(2500);   
 
-  // 4V für 2 Sekunden
-  analogWrite(PIN_HEAT, 204);  // PWM-Wert für 4V
-  delay(2000);  // 2 Sekunden warten
+  OCR1B = 250;  
+  lcd.print(".");  // Zweiter Punkt
+  delay(2500);   
+
+  OCR1B = 500;  
+  lcd.print(".");  // Dritter Punkt
+  delay(2500);   
 
   // HEAT ausschalten (Ausgabe auf 0V)
-  analogWrite(PIN_HEAT, 0);  // PWM-Wert für 0V
+  OCR1B = 0;  
   lcd.clear();
-  lcd.setCursor(0, 0);
   lcd.print("HEAT OFF");
   waitForButtonPress();
 

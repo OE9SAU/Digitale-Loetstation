@@ -2,10 +2,6 @@
 // zum Überprüfen der externen Verdrahtung und PCB Bestückung
 // v1_OE9SAU_CHATGPT
 
-// Testroutine für Lötkolben Projekt
-// zum Überprüfen der externen Verdrahtung und PCB Bestückung
-// v5_OE9SAU_CHATGPT
-
 #include <TinyWireM.h>
 #include <LiquidCrystal_I2C.h>
 

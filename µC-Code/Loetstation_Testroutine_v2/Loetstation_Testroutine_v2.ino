@@ -1,6 +1,6 @@
 // Testroutine für Lötkolben Projekt
 // zum Überprüfen der externen Verdrahtung und PCB Bestückung
-// v1_OE9SAU_CHATGPT
+// v2_OE9SAU_CHATGPT
 
 #include <TinyWireM.h>
 #include <LiquidCrystal_I2C.h>
@@ -25,7 +25,7 @@ void setup() {
   lcd.begin(16, 2);
   lcd.setBacklight(true);
   lcd.setCursor(0, 0);
-  lcd.print("HW TEST v1");
+  lcd.print("HW TEST v2");
 
   pinMode(PIN_ROT_A, INPUT_PULLUP);
   pinMode(PIN_ROT_B, INPUT_PULLUP);
@@ -63,14 +63,18 @@ void loop() {
   lcd.print(".");  // Erster Punkt direkt hinter "HEAT Test"
   delay(2500);   
 
-  OCR1B = 250;  
+  OCR1B = 500;  
   lcd.print(".");  // Zweiter Punkt
   delay(2500);   
 
-  OCR1B = 500;  
+  OCR1B = 750;  
   lcd.print(".");  // Dritter Punkt
   delay(2500);   
 
+  OCR1B = 1000;  
+  lcd.print(".");  // Vierter Punkt
+  delay(2500);   
+  
   // HEAT ausschalten (Ausgabe auf 0V)
   OCR1B = 0;  
   lcd.clear();
@@ -119,13 +123,13 @@ void standbyMode() {
   
   // Zeige den aktuellen Zustand des Standby-Eingangs
   lcd.setCursor(0, 1);
-  lcd.print("STBY: " + String(digitalRead(PIN_STBY)));
+  lcd.print("STBY: " + String(!digitalRead(PIN_STBY)));
   
   // LED folgt dem Zustand des Standby-Eingangs
   if (digitalRead(PIN_STBY) == LOW) {
-    digitalWrite(PIN_LED, HIGH);  // LED ein, wenn STBY LOW
+    digitalWrite(PIN_LED, LOW);           // LED off, wenn STBY LOW
   } else {
-    digitalWrite(PIN_LED, LOW);   // LED aus, wenn STBY HIGH
+    digitalWrite(PIN_LED, HIGH);          // LED on, wenn STBY HIGH
   }
 
   standbyStart = millis();
@@ -134,13 +138,13 @@ void standbyMode() {
   while (true) {
     // Aktualisiere den Zustand des Standby-Eingangs
     lcd.setCursor(6, 1);
-    lcd.print(String(digitalRead(PIN_STBY)) + "  ");
+    lcd.print(String(!digitalRead(PIN_STBY)) + "  ");
     
     // LED folgt weiterhin dem Zustand des Standby-Eingangs
     if (digitalRead(PIN_STBY) == LOW) {
-      digitalWrite(PIN_LED, HIGH);
-    } else {
       digitalWrite(PIN_LED, LOW);
+    } else {
+      digitalWrite(PIN_LED, HIGH);
     }
 
     // Warten auf Bestätigung durch Knopfdruck

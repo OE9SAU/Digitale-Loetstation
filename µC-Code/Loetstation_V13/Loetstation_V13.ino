@@ -38,11 +38,6 @@
                   Pin Port Nr.
                    5  PB2  8   LOGO LED
                  *Programmanpassung für LOGO LED
-                 *Adresse LCD 0x3F
-
-   Version       1.4 vom 08.11.2024 / OE9SAU
-                 *Adresse LCD 0x27
-                 *alt TONEINDIFF   4
 */
 
 #include <TinyWireM.h>
@@ -73,7 +68,7 @@
 #define PRELLUNG     10                               // Wartezeit fuer Entprellung des Tasters in Millisekunden
 #define TONPEAKZEIT  70                               // Dauer einer Schwingung in Mikrosekunden
 #define TONEINZEIT   1000                             // Dauer des Tons als Anzahl der Schwingungen
-#define TONEINDIFF   5                                // Temperaturdifferenz SOLL/IST in Grad C bei der ein Ton ertoent
+#define TONEINDIFF   4                                // Temperaturdifferenz SOLL/IST in Grad C bei der ein Ton ertoent
 #define TONRESDIFF   10                               // Temperaturdifferenz SOLL/IST in Grad C fuer reset, um spaeter wieder zu ertoenen
 #define NOTAUSDIFF   50                               // Abweichung vom letzten (sinnvollen) Wert, ab welcher ein Wert als ungueltig betrachtet wird
 #define NOTAUSANZ    10                               // Anzahl der direkt aufeinanderfolgenden, ungueltigen Werte, bevor NOTAUS erfolgt
@@ -147,7 +142,7 @@ void setup(){
   anz_tist = lr_tist;                                 // Startwert fuer die laufende Mittelwertbildung
   if(!digitalRead(PIN_ROT_PUSH)){schirmSetup();}      // Bei gedruecktem Taster zur Einstellung der Standardwerte
   else{
-    lcd.print("SolderUnit V1.4");                     // Begruessungstext 1. Zeile
+    lcd.print("SolderUnit V1.3");                     // Begruessungstext 1. Zeile
     lcd.setCursor(0,1);                               // Setze Cursor zum Beginn der zweiten Zeile
     lcd.print("by OE1CGS/OE9SAU");                    // Begruessungstext 2. Zeile
     delay(1500);}                                     // Begruessungstext 1,5 Sekunden lang anzeigen

@@ -41,6 +41,7 @@
                  *Adresse LCD 0x3F
 
    Version       1.4 vom 08.11.2024 / OE9SAU
+                 *Adresse LCD 0x27
                  *alt TONEINDIFF   4
 */
 

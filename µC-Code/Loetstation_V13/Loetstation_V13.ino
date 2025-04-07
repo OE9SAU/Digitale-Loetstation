@@ -38,9 +38,6 @@
                   Pin Port Nr.
                    5  PB2  8   LOGO LED
                  *Programmanpassung für LOGO LED
-                 1.4 vom 04.04.25/ OE9SAU
-                 *STEP 336: 4000 auf 2500ms 
-                 
 */
 
 #include <TinyWireM.h>
@@ -145,7 +142,7 @@ void setup(){
   anz_tist = lr_tist;                                 // Startwert fuer die laufende Mittelwertbildung
   if(!digitalRead(PIN_ROT_PUSH)){schirmSetup();}      // Bei gedruecktem Taster zur Einstellung der Standardwerte
   else{
-    lcd.print("SolderUnit V1.4");                     // Begruessungstext 1. Zeile
+    lcd.print("SolderUnit V1.3");                     // Begruessungstext 1. Zeile
     lcd.setCursor(0,1);                               // Setze Cursor zum Beginn der zweiten Zeile
     lcd.print("by OE1CGS/OE9SAU");                    // Begruessungstext 2. Zeile
     delay(1500);}                                     // Begruessungstext 1,5 Sekunden lang anzeigen
@@ -333,7 +330,7 @@ int abfrageTemperatur(){                               // Liest die aktuelle Tem
   delay(WARTEZEIT);                                    // Warten, um Tiefpassfilter Zeit zu geben
   int tempval = analogRead(PIN_TEMP);                  // Abfrage des ADC-Wertes des Temperaturfuehlers
   if(tempval > 1000){notAus();}                        // Bei extrem hoher Temperatur oder ohne Sensor -> NOT-AUS
-  if(millis() > 2500 && tempval == 0){notAus();}       // Wenn bei laufendem Betrieb immer noch keine Temperatur gemeldet wird -> NOT-AUS
+  if(millis() > 4000 && tempval == 0){notAus();}       // Wenn bei laufendem Betrieb immer noch keine Temperatur gemeldet wird -> NOT-AUS
   OCR1B  = pwm;                                        // Heizung wieder auf den aktuellen Wert einschalten
   return A_ADC*tempval*tempval + B_ADC*tempval + C_ADC + 0.5;      // Umwandlung des ADC-Wertes in Temperaturwert [Grad Celsius]
 }

@@ -40,7 +40,7 @@
                  *Programmanpassung für LOGO LED
                  1.4 vom 04.04.25/ OE9SAU
                  *STEP 336: 4000 auf 2500ms 
-				 1.5 aktuell
+				 1.5 aktuellff
                  
 */
 #include <TinyWireM.h>

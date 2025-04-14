@@ -1,6 +1,6 @@
 # Digitale Lötstation mit ATtiny 84 v2
 PCB design by OE9SAU <br>
-uC Code and STL-Desing by OE1CGS [http://www.oe1cgs.at/smd-loetstation/] <br>
+µC-Code and STL-Desing by OE1CGS [http://www.oe1cgs.at/smd-loetstation/] <br>
 
 
 Soldering Unit for Weller RT solder tips. <br>

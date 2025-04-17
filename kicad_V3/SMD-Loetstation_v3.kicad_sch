@@ -7264,76 +7264,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 72.39 55.245 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "221262bb-6fe9-45ca-a78e-d39409749bf9")
-		(property "Reference" "C777"
-			(at 76.2 53.9749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 76.2 56.5149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 73.3552 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 72.39 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 72.39 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ce3af519-1c7a-4423-9206-88de2f4293c6")
-		)
-		(pin "2"
-			(uuid "8d683ad8-c14d-4418-b2c3-3ec0d41137a9")
-		)
-		(instances
-			(project "SMD-Loetstation_v1"
-				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
-					(reference "C777")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 220.98 128.905 0)
 		(unit 1)
@@ -8598,7 +8528,7 @@
 				)
 			)
 		)
-		(property "Value" "2uF"
+		(property "Value" "2.2uF"
 			(at 177.8 29.21 90)
 			(effects
 				(font
@@ -9619,7 +9549,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF/35V"
+		(property "Value" "100uF/16V"
 			(at 73.66 39.37 0)
 			(effects
 				(font

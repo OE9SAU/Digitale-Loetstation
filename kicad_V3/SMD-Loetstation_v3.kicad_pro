@@ -444,7 +444,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SMD-Loetstation_v3.kicad_pro.kicad_pro",
+    "filename": "SMD-Loetstation_v3.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -481,7 +481,7 @@
       "netlist": "",
       "plot": "gerber/",
       "pos_files": "",
-      "specctra_dsn": "SMD-Loetstation_v3.kicad_pro.dsn",
+      "specctra_dsn": "SMD-Loetstation_v3.dsn",
       "step": "",
       "svg": "",
       "vrml": ""

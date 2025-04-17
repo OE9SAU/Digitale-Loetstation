@@ -4,6 +4,7 @@ PCB design by OE9SAU <br>
 
 
 Soldering Unit for Weller RT solder tips. <br>
+<<<<<<< HEAD
 Current PCB version is also including a small 5V/50mA (max100mA) powersupply for the first power on trials. <br>
 
 ![SMD-Loetstation](pics/Complete.png)

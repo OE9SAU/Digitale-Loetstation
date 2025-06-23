@@ -4411,10 +4411,10 @@
 		)
 	)
 	(junction
-		(at 80.01 109.22)
+		(at 103.505 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "05253a4d-93f5-4685-9c5d-61a74f5dca47")
+		(uuid "04efa8c4-07c2-48ce-acb0-73af21599bd3")
 	)
 	(junction
 		(at 36.195 73.025)
@@ -4790,7 +4790,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.425 109.855) (xy 98.425 116.84)
+			(xy 103.505 110.49) (xy 103.505 116.84)
 		)
 		(stroke
 			(width 0)
@@ -4990,16 +4990,6 @@
 	)
 	(wire
 		(pts
-			(xy 98.425 116.84) (xy 80.01 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20359e36-525b-44b9-9844-6ce8020e0b5a")
-	)
-	(wire
-		(pts
 			(xy 36.195 73.025) (xy 61.595 73.025)
 		)
 		(stroke
@@ -5090,7 +5080,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.965 109.855) (xy 100.965 117.475)
+			(xy 106.045 110.49) (xy 106.045 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5410,6 +5400,16 @@
 	)
 	(wire
 		(pts
+			(xy 79.375 116.84) (xy 80.01 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fba9e48-6dc5-4581-9bfb-3df9d357698f")
+	)
+	(wire
+		(pts
 			(xy 156.21 136.525) (xy 156.21 134.62)
 		)
 		(stroke
@@ -5430,7 +5430,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 107.315) (xy 80.01 109.22)
+			(xy 80.01 107.315) (xy 80.01 116.84)
 		)
 		(stroke
 			(width 0)
@@ -5587,16 +5587,6 @@
 			(type default)
 		)
 		(uuid "75e0ad11-907f-423c-bf35-3ac73f511314")
-	)
-	(wire
-		(pts
-			(xy 80.01 109.22) (xy 80.01 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7753b5cd-bc2e-4656-a178-d7af42bc2641")
 	)
 	(wire
 		(pts
@@ -5900,16 +5890,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 109.22) (xy 80.01 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d133dfc-46e7-46bc-a7a8-1fc201620b8f")
-	)
-	(wire
-		(pts
 			(xy 248.285 64.135) (xy 248.285 71.12)
 		)
 		(stroke
@@ -6060,7 +6040,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 111.76) (xy 73.66 109.22)
+			(xy 113.03 119.38) (xy 113.03 116.84)
 		)
 		(stroke
 			(width 0)
@@ -6370,6 +6350,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 116.84) (xy 103.505 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4deb3dc-146e-4bec-be94-2e0dc5e3a818")
+	)
+	(wire
+		(pts
 			(xy 98.425 127) (xy 93.345 127)
 		)
 		(stroke
@@ -6590,6 +6580,16 @@
 	)
 	(wire
 		(pts
+			(xy 103.505 116.84) (xy 113.03 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9586947-fff1-43d3-a335-5541d5a27dc9")
+	)
+	(wire
+		(pts
 			(xy 156.21 90.805) (xy 152.4 90.805)
 		)
 		(stroke
@@ -6640,7 +6640,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 121.92) (xy 73.66 125.73)
+			(xy 113.03 129.54) (xy 113.03 133.35)
 		)
 		(stroke
 			(width 0)
@@ -9634,72 +9634,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 73.66 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92deb2fe-f167-4a0f-947e-c330bbcdaeae")
-		(property "Reference" "#PWR026"
-			(at 73.66 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a2c10f9-56e7-47a0-9aba-4c04d2a37fb9")
-		)
-		(instances
-			(project "SMD-Loetstation_v3"
-				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 248.285 52.07 180)
 		(unit 1)
@@ -9915,6 +9849,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 113.03 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bf4c77f-584a-49bb-9515-04cf2dd67f1f")
+		(property "Reference" "#PWR026"
+			(at 113.03 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e3198d3-f1f4-4536-84b1-ccc84993f182")
+		)
+		(instances
+			(project "SMD-Loetstation_v3"
+				(path "/717fbe8e-200c-4cdd-b36a-f662251f0e9c"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 24.13 156.845 0)
 		(mirror x)
@@ -10123,7 +10123,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.965 117.475 0)
+		(at 106.045 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10132,7 +10132,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa2b02b7-619b-43b5-91e9-6ea3bf2f74de")
 		(property "Reference" "#PWR013"
-			(at 100.965 123.825 0)
+			(at 106.045 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10141,7 +10141,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.965 121.92 0)
+			(at 106.045 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10149,7 +10149,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.965 117.475 0)
+			(at 106.045 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10158,7 +10158,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.965 117.475 0)
+			(at 106.045 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10167,7 +10167,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.965 117.475 0)
+			(at 106.045 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10189,7 +10189,8 @@
 	)
 	(symbol
 		(lib_id "SK55C:SK55C")
-		(at 73.66 116.84 90)
+		(at 113.03 124.46 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10197,7 +10198,7 @@
 		(dnp no)
 		(uuid "ab149430-67b7-440a-95b6-fa200dd2d853")
 		(property "Reference" "D3"
-			(at 71.12 115.5699 90)
+			(at 115.57 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10206,7 +10207,7 @@
 			)
 		)
 		(property "Value" "SK55C"
-			(at 71.12 118.1099 90)
+			(at 115.57 125.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10215,7 +10216,7 @@
 			)
 		)
 		(property "Footprint" "SK55C:DIO_SK55C"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10225,7 +10226,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10234,7 +10235,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10243,7 +10244,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "1801-SK55CTR-ND"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10253,7 +10254,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SK55C/taiwan/view-part/?ref=snap"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10263,7 +10264,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.65mm"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10273,7 +10274,7 @@
 			)
 		)
 		(property "Package" "DO-214AB-2 Taiwan Semiconductor"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10283,7 +10284,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/SK55C/taiwan/view-part/?ref=eda"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10293,7 +10294,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10303,7 +10304,7 @@
 			)
 		)
 		(property "PARTREV" "S2311"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10313,7 +10314,7 @@
 			)
 		)
 		(property "MF" "Taiwan Semiconductor"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10323,7 +10324,7 @@
 			)
 		)
 		(property "MP" "SK55C"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10333,7 +10334,7 @@
 			)
 		)
 		(property "Description_1" "\n                        \n                            5A, 50V, Schottky Rectifier\n                        \n"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10343,7 +10344,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Taiwan Semiconductor"
-			(at 73.66 116.84 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12618,7 +12619,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 100.965 104.775 270)
+		(at 106.045 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12627,7 +12628,7 @@
 		(fields_autoplaced yes)
 		(uuid "f68ccf21-3379-4075-8dd2-ee8d43ae38c9")
 		(property "Reference" "J1"
-			(at 102.235 104.1399 90)
+			(at 107.315 104.7749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12636,7 +12637,7 @@
 			)
 		)
 		(property "Value" "12V POW"
-			(at 102.235 106.6799 90)
+			(at 107.315 107.3149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12645,7 +12646,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 100.965 104.775 0)
+			(at 106.045 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12654,7 +12655,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.965 104.775 0)
+			(at 106.045 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12663,7 +12664,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 100.965 104.775 0)
+			(at 106.045 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)

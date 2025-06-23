@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,8.0.5*%
-%TF.CreationDate,2024-11-08T12:04:52+01:00*%
-%TF.ProjectId,SMD-Loetstation_v2,534d442d-4c6f-4657-9473-746174696f6e,rev?*%
+%TF.CreationDate,2025-06-23T12:16:39+02:00*%
+%TF.ProjectId,SMD-Loetstation_v3,534d442d-4c6f-4657-9473-746174696f6e,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Paste,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 8.0.5) date 2024-11-08 12:04:52*
+G04 Created by KiCad (PCBNEW 8.0.5) date 2025-06-23 12:16:39*
 %MOMM*%
 %LPD*%
 G01*

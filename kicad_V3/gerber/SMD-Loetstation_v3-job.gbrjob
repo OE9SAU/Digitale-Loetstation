@@ -5,11 +5,11 @@
       "Application": "Pcbnew",
       "Version": "8.0.5"
     },
-    "CreationDate": "2024-11-08T12:04:53+01:00"
+    "CreationDate": "2025-06-23T12:16:40+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "SMD-Loetstation_v2",
+      "Name": "SMD-Loetstation_v3",
       "GUID": "534d442d-4c6f-4657-9473-746174696f6e",
       "Revision": "rev?"
     },
@@ -34,47 +34,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "SMD-Loetstation_v2-F_Cu.gbr",
+      "Path": "SMD-Loetstation_v3-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SMD-Loetstation_v2-B_Cu.gbr",
+      "Path": "SMD-Loetstation_v3-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SMD-Loetstation_v2-F_Paste.gbr",
+      "Path": "SMD-Loetstation_v3-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SMD-Loetstation_v2-B_Paste.gbr",
+      "Path": "SMD-Loetstation_v3-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SMD-Loetstation_v2-F_Silkscreen.gbr",
+      "Path": "SMD-Loetstation_v3-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SMD-Loetstation_v2-B_Silkscreen.gbr",
+      "Path": "SMD-Loetstation_v3-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SMD-Loetstation_v2-F_Mask.gbr",
+      "Path": "SMD-Loetstation_v3-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "SMD-Loetstation_v2-B_Mask.gbr",
+      "Path": "SMD-Loetstation_v3-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "SMD-Loetstation_v2-Edge_Cuts.gbr",
+      "Path": "SMD-Loetstation_v3-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

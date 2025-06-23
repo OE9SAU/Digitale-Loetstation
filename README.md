@@ -5,8 +5,7 @@ PCB design by OE9SAU <br>
 v3: Add SK55 for reverse polarity protection
 
 Soldering Unit for Weller RT solder tips. <br>
-<<<<<<< HEAD
-Current PCB version is also including a small 5V/50mA (max100mA) powersupply for the first power on trials. <br>
+
 
 ![SMD-Loetstation](pics/Complete.png)
 ![SMD-Loetstation](pics/Loetstation.jpg)
